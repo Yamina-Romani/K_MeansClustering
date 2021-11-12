@@ -117,7 +117,7 @@ plt.show()
 
 # ..........................................................................................................................
 # ...........             k means ............................................................................................
-clusters = 5  # modified for Petclinc data will be 3 or 2
+clusters = 4 # modified for Petclinc data will be 3 or 2
 
 model = KMeans(n_clusters=clusters, init="k-means++", max_iter=200, n_init=10, algorithm="elkan")
 
