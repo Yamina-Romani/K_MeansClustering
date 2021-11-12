@@ -1,0 +1,14 @@
+product product product : product_id, code, cost_price, description, image1, image2, image3, image4, is_active, is_deleted, name, our_price, sale_price, stock_qty, year, category_id, category_id, make_id, make_id, model_id, model_id.
+category category category : category_id, description, is_active, is_deleted, name.
+make make make : make_id, is_deleted, name.
+model model model : model_id, is_deleted, name, make_id.
+cart_item cart_item cart_item : cart_item_id, our_price, quantity, total_price, product_id, product_id, shopping_cart_id, shopping_cart_id.
+shopping_cart shopping_cart shopping_cart : shopping_cart_id, description, grand_total, payment_method, shipping_method, shipping_total, sub_total, tax_rate, tax_total, customer_id, customer_id.
+orders orders orders : order_id, delivery_date, description, grand_total, is_deleted, order_date, order_status, payment_method, shipping_method, shipping_total, sub_total, tax_rate, tax_total, customer_id, customer_id.
+order_detail order_detail order_detail : order_detail_id, is_deleted, our_price, quantity, total_price, order_id, order_id, product_id, product_id.
+customer customer customer : customer_id, address1, address2, city, company, first_name, is_deleted, last_name, password, phone, postal_code, state, username, country_id, country_id.
+user user user : user_id, first_name, is_active, is_deleted, last_name, password, username.
+role role role : role_id, name.
+customer_roles customer_roles customer_roles : customer_id, customer_id, role_id, role_id.
+user_roles user_roles user_roles : user_id, user_id, role_id, role_id.
+country country country : country_id, code, is_deleted, name.

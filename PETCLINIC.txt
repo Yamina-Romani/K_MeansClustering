@@ -1,0 +1,7 @@
+specialties specialties specialties : specialty_id, name.
+vet_specialties vet_specialties vet_specialties : vet_id, vet_id, specialty_id, specialty_id.
+vets vets vets : vet_id, first_name, last_name.
+pets pets pets : pet_id, name, birth_date, type_id, type_id, owner_id, owner_id.
+types types types : type_id, name.
+owners owners owners : owner_id, first_name, last_name,address, city, telephone.
+visits visits visits : visit_id, pet_id, pet_id, visit_date, description.
